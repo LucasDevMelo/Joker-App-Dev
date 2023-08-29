@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.tiagoaguiar.tutorial.jokerappdev.HomePresentation.HomePresenter
 import co.tiagoaguiar.tutorial.jokerappdev.R
+import co.tiagoaguiar.tutorial.jokerappdev.data.CategoryRemoteDataSource
 import co.tiagoaguiar.tutorial.jokerappdev.model.Category
 import com.xwray.groupie.GroupieAdapter
 
@@ -21,6 +22,7 @@ class HomeFragment : Fragment() {
   private val adapter = GroupieAdapter()
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
     presenter = HomePresenter(this)
 
     //View <---> presenter
