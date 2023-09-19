@@ -10,7 +10,8 @@
         tools:listitem="@layout/item_category"
         tools:itemCount="4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
 
     <ProgressBar
         android:id="@+id/progress_bar"
