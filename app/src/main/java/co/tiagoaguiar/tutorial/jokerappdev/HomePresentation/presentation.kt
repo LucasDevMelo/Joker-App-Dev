@@ -1,15 +1,12 @@
 package co.tiagoaguiar.tutorial.jokerappdev.HomePresentation
 
 import android.graphics.Color
-import android.os.Handler
-import android.os.Looper
 import co.tiagoaguiar.tutorial.jokerappdev.data.CategoryRemoteDataSource
 import co.tiagoaguiar.tutorial.jokerappdev.data.ListCategoryCallback
 import co.tiagoaguiar.tutorial.jokerappdev.model.Category
-import co.tiagoaguiar.tutorial.jokerappdev.view.CategoryItem
 import co.tiagoaguiar.tutorial.jokerappdev.view.HomeFragment
 
-class HomePresenter(
+class presentation(
     private val view: HomeFragment,
     private val dataSource: CategoryRemoteDataSource = CategoryRemoteDataSource()
     ) : ListCategoryCallback {

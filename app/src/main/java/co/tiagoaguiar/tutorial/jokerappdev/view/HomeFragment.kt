@@ -10,21 +10,20 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import co.tiagoaguiar.tutorial.jokerappdev.HomePresentation.HomePresenter
+import co.tiagoaguiar.tutorial.jokerappdev.HomePresentation.presentation
 import co.tiagoaguiar.tutorial.jokerappdev.R
-import co.tiagoaguiar.tutorial.jokerappdev.data.CategoryRemoteDataSource
 import co.tiagoaguiar.tutorial.jokerappdev.model.Category
 import com.xwray.groupie.GroupieAdapter
 
 class HomeFragment : Fragment() {
 
   private lateinit var progressBar: ProgressBar
-  private lateinit var presenter: HomePresenter
+  private lateinit var presenter: presentation
   private val adapter = GroupieAdapter()
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    presenter = HomePresenter(this)
+    presenter = presentation(this)
 
     //View <---> presenter
   }
