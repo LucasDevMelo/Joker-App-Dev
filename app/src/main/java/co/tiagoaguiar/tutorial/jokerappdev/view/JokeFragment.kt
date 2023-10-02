@@ -70,5 +70,4 @@ class JokeFragment : Fragment(){
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
-
 }
