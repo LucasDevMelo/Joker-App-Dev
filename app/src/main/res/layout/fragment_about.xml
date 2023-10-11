@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/txt_version"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         tools:text="Versão (1.0.0)"
         style="@style/TextAppearance.AppCompat.Title"
         app:layout_constraintStart_toStartOf="parent"
